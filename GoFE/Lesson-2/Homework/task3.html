@@ -5,9 +5,56 @@
     <title></title>
 </head>
 <body>
-<form name="test" action="/">
-    <p>Name</p>
+<p>Name<br>
+    <input type="text">
+</p>
+<p>Email<br>
+    <input type="text">
+</p>
+<p>Sex<br>
+    <input type="radio" name="sex" value="male">Male
+    <input type="radio" name="sex" value="female">Female
+</p>
+<p>Current status<br>
+    <input type="checkbox" name="status" value="Student"> Student<br>
+    <input type="checkbox" name="status" value="Employed"> Employed<br>
+    <input type="checkbox" name="status" value="Unemployed"> Unemployed<br>
+</p>
 
-</form>
+<p>Month and Year of birth<br>
+    <select name="month">
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+    </select>
+    <select name="year">
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+    </select>
+</p>
+<p>
+    Skill and Technologies<br>
+    <select multiple>
+        <optgroup label="Tech skills">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="git">git</option>
+            <optgroup label="Soft skills">
+                <option value="Time management">Time management</option>
+                <option value="Proactivity">Proactivity</option>
+                <option value="Teamwork">Teamwork</option>
+                <option value="Leadership">Leadership</option>
+    </select>
+</p>
+<p>Photo<br>
+    <input type="file" name="photo">
+</p>
+<p>Comments<br>
+    <textarea rows="4" cols="20" name="mytext">
+</textarea>
+</p>
+<input type="submit" value="Save"/>
 </body>
 </html>
